@@ -10,7 +10,14 @@ class TTTBoard:
             represent moves by player 'O' and '*'s are spots no one has yet played on
     """
 
-    pass
+    def board(self, x, o, asterick):
+        self.x = 'X'
+        self.o = 'O'
+        self.asterick = '*'
+    def __init__(self, board):
+        return f"{self.asterick} {self.asterick} {self.asterick} n/ {self.asterick} {self.asterick} {self.asterick} n/ {self.asterick} {self.asterick} {self.asterick}"
+    def __str__(self):
+        return f"{self.asterick} {self.asterick} {self.asterick} n/ {self.asterick} {self.asterick} {self.asterick} n/ {self.asterick} {self.asterick} {self.asterick}"
 
 
 def play_tic_tac_toe() -> None:
