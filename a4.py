@@ -21,7 +21,12 @@ class TTTBoard:
 
 
 def play_tic_tac_toe() -> None:
-    """Uses your class to play TicTacToe"""
+    def make_move(self, player, pos):
+        self.player = player
+        self.pos = pos
+        return f""
+
+
 
     def is_int(maybe_int: str):
         """Returns True if val is int, False otherwise
